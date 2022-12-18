@@ -43,16 +43,13 @@ for i in range(len(byte)):
     x_dis[i]  = b1[i]
     if x_dis[i] >127:
         x_dis[i] = x_dis[i]- 255
-    else:
-        x_dis[i]
+
 
         # byte2: Y displacement
     y_dis[i] = b2[i]
     if y_dis[i] > 127:
         y_dis[i] = y_dis[i] - 255
-    else:
-        y_dis[i]
-       # print("Ydis=",y_dis[i])
+
     if i < 1 :
         x[i] =x[0]+ (x_dis[i])
         y[i] =y[0]+ (y_dis[i])
